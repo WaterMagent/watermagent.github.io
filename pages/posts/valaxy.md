@@ -84,7 +84,7 @@ pnpm create valaxy
 ```
 ## 配置
 懒得写了直接放原网页把
-<iframe src="https://valaxy.site/guide/config"></iframe>
+<iframe height=275 width=275 src="https://valaxy.site/guide/config"></iframe>
 ## 部署
-也懒得写了直接看吧
-<iframe src="https://valaxy.site/guide/deploy"></iframe>
+也懒得写了直接看吧  
+<iframe height=275 width=275 src="https://valaxy.site/guide/deploy"></iframe>
