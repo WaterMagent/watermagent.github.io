@@ -31,7 +31,7 @@ export default defineSiteConfig({
     {
       name: '洛谷',
       link: 'https://www.luogu.com.cn/user/1429721',
-      icon: 'i-ri-luogu-line',
+      icon: 'i-ri-rss-line',
       color: '#E6162D',
     },
     {
@@ -42,7 +42,7 @@ export default defineSiteConfig({
     },
     {
       name: 'E-Mail',
-      link: 'mailto:me@yunyoujun.cn',
+      link: 'mailto:3846359425@qq.com',
       icon: 'i-ri-mail-line',
       color: '#8E71C1',
     },
