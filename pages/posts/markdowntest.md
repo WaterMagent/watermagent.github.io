@@ -7,4 +7,4 @@ tags:
 - test
 top: 1
 --
-The quick brown fox jumps over a lazy dog.
+The quick brown fox jumps over a lazy dog
