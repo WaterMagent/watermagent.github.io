@@ -31,7 +31,7 @@ export default defineSiteConfig({
     {
       name: '洛谷',
       link: 'https://www.luogu.com.cn/user/1429721',
-      icon: 'i-ri-rss-line',
+      icon: 'i-ri-weibo-line',
       color: '#E6162D',
     },
     {
