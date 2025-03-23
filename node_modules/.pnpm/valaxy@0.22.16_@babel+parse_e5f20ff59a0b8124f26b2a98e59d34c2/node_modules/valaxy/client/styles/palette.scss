@@ -1,0 +1,76 @@
+@use "sass:map";
+@use "sass:meta";
+@use "./mixins" as *;
+@use "sass:color";
+
+$palette: () !default;
+$palette: map.merge(
+  (
+    "white": #fff,
+    "black": #1a1a1a,
+    "gray": #8e8e8e,
+    "danger": #db2828,
+    "warning": #f2711c,
+
+    "text-light-1": #213547,
+    "text-light-2": rgb(60 60 60 / 0.7),
+    "text-light-3": rgb(60 60 60 / 0.33),
+    "text-light-4": rgb(60 60 60 / 0.18),
+    "text-dark-1": rgb(255 255 255 / 0.87),
+    "text-dark-2": rgb(235 235 235 / 0.6),
+    "text-dark-3": rgb(235 235 235 / 0.38),
+    "text-dark-4": rgb(235 235 235 / 0.18),
+  ),
+  $palette
+);
+$colors: () !default;
+$colors: map.merge(
+  (
+    "primary": #5718BC,
+  ),
+  $colors
+);
+$c-primary: map.get($colors, "primary") !default;
+
+// https://sass-lang.com/documentation/modules/color/
+// The lighten() function increases lightness by a fixed amount, which is often not the desired effect. To make a color a certain percentage lighter than it was before, use scale() instead.
+$colors: map.merge(
+  (
+    "primary-light": color.scale($c-primary, $lightness: 10%),
+    "primary-lighter": color.scale($c-primary, $lightness: 20%),
+    "primary-dark": color.scale($c-primary, $lightness: -10%),
+  ),
+  $colors
+);
+$light: () !default;
+$light: map.merge(
+  (
+    "c-brand": $c-primary,
+
+    "border-color": #222,
+
+    "c-text": #333,
+    "c-text-light": #555,
+    "c-text-lighter": #666,
+    "c-text-dark": #111,
+
+    // "c-primary-rgb": #{color.red($c-primary), color.green($c-primary), color.blue($c-primary)},
+    "c-primary-rgb": #{color.channel($c-primary, 'red'), color.channel($c-primary, 'green'), color.channel($c-primary, 'blue')},
+
+    "c-link": get-css-var("c-primary-dark"),
+  ),
+  $light
+);
+$dark: () !default;
+$dark: map.merge(
+  (
+    "border-color": #e6e6e6,
+
+    "c-text": #f2f2f2,
+    "c-text-light": #ddd,
+    "c-text-lighter": #eee,
+    "c-text-dark": rgba(#ebebeb, 0.8),
+    "c-link": map.get($colors, "primary-lighter"),
+  ),
+  $dark
+);

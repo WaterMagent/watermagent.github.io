@@ -1,0 +1,163 @@
+@use 'sass:map';
+@use '../vars.scss' as *;
+
+$banner-animation-duration: 1s;
+$char-animation-duration: 0.4s;
+
+#yun-banner {
+  --banner-line-height: 0;
+  --line-animation-duration: 0.4s;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: var(--banner-container-height, calc(100 * var(--vh)));
+}
+
+.banner-char-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-line-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: var(--banner-line-height);
+  transition: height 2s;
+
+  &.bottom {
+    justify-content: end;
+  }
+}
+
+.vertical-line {
+  &-top,
+  &-bottom {
+    display: flex;
+    background-color: var(--banner-line-color);
+    width: 1px;
+    height: 0;
+  }
+
+  &-bottom {
+    flex-direction: column-reverse;
+  }
+}
+
+.banner-line {
+  &.enter {
+    animation-name: extend-line;
+    animation-duration: var(--line-animation-duration);
+    animation-fill-mode: forwards;
+    animation-timing-function: map.get($cubic-bezier, "ease-in");
+    animation-iteration-count: 1;
+  }
+
+  &.active {
+    height: var(--banner-line-height);
+  }
+
+  // Exit
+  &.exit {
+    animation-name: extend-line;
+    animation-duration: var(--line-animation-duration);
+    animation-fill-mode: forwards;
+
+    // reverse
+    animation-direction: reverse;
+    animation-timing-function: map.get($cubic-bezier, "ease-in-out");
+    animation-iteration-count: 1;
+  }
+}
+
+@keyframes extend-line {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: var(--banner-line-height);
+  }
+}
+
+.char {
+  font-family: var(--va-font-serif);
+  font-weight: 900;
+  font-size: var(--banner-char-size, 1rem);
+  background-color: var(--banner-char-bg-color);
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0s;
+
+  &:hover {
+    color: var(--banner-char-hover-color);
+    background-color: var(--banner-char-color);
+  }
+
+  &-left,
+  &-right {
+    display: flex;
+    color: var(--banner-char-color);
+    opacity: 0;
+  }
+
+  &-left {
+    border-left: 1px solid var(--banner-line-color);
+    /* stylelint-disable-next-line color-function-notation */
+    border-right: 0 solid rgba(var(--va-c-primary-rgb), 0.1);
+    border-right-width: 0;
+    animation-name: char-move-left;
+    animation-duration: $char-animation-duration;
+    animation-delay: var(--line-animation-duration);
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+
+  &-right {
+    /* stylelint-disable-next-line color-function-notation */
+    border-left: 0 solid rgba(var(--va-c-primary-rgb), 0.1);
+    border-right: 1px solid var(--banner-line-color);
+    border-left-width: 0;
+    animation-name: char-move-right;
+    animation-duration: $char-animation-duration;
+    animation-delay: var(--line-animation-duration);
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes char-move-left {
+  from {
+    opacity: 0;
+    border-right-width: 0;
+  }
+
+  to {
+    opacity: 1;
+    border-right-width: var(
+      --banner-empty-border-size,
+      var(--banner-char-size)
+    );
+  }
+}
+
+@keyframes char-move-right {
+  from {
+    opacity: 0;
+    border-left-width: 0;
+  }
+
+  to {
+    opacity: 1;
+    border-left-width: var(
+      --banner-empty-border-size,
+      var(--banner-char-size)
+    );
+  }
+}

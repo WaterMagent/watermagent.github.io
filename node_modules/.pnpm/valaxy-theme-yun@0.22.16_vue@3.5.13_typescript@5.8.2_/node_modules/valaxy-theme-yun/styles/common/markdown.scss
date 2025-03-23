@@ -1,0 +1,124 @@
+@use "valaxy/client/styles/mixins/index.scss" as *;
+
+.markdown-body {
+  --smc-font-family: var(--va-font-sans);
+  --c-toc-link: var(--va-c-text-light);
+}
+
+.dark {
+  .markdown-body {
+    --c-toc-link: var(--va-c-text-dark);
+  }
+}
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+.markdown-body {
+  word-wrap: break-word;
+
+  a {
+    color: var(--va-c-link);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--va-font-serif);
+    font-weight: 900;
+  }
+
+  ul {
+    list-style: initial;
+
+    li > p {
+      margin-bottom: 0;
+    }
+  }
+
+  ol {
+    li {
+      list-style: decimal;
+    }
+  }
+
+  img {
+    margin: 0.5rem auto;
+    height: auto;
+    max-width: min(92%, 800px);
+  }
+
+  p {
+    overflow: unset;
+  }
+
+  // alone image
+  figure {
+    figcaption {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--va-c-text-2);
+      margin-bottom: 1rem;
+    }
+  }
+
+  hr {
+    opacity: 0.6;
+    height: 2px;
+    border-top-width: 0;
+    background-color: var(--va-c-text);
+  }
+
+  // lang
+  div[class*='language-'].line-numbers-mode {
+    /* rtl:ignore */
+    padding-left: 32px;
+  }
+
+  .line-numbers-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    /* rtl:ignore */
+    left: 0;
+    z-index: 3;
+
+    /* rtl:ignore */
+    border-right: 1px solid var(--va-code-block-divider-color);
+    padding-top: 20px;
+    width: 32px;
+    text-align: center;
+    font-family: var(--va-font-family-mono);
+    line-height: var(--va-code-line-height);
+    font-size: var(--va-code-font-size);
+    color: var(--va-code-line-number-color);
+    transition:
+      border-color 0.5s,
+      color 0.5s;
+  }
+
+  // table
+  .table-container {
+    table {
+      thead {
+        th {
+          text-align: left;
+          border: 1px solid rgba(var(--va-c-primary-rgb), 0.3);
+          background-color: rgba(var(--va-c-primary-rgb), 0.1);
+        }
+      }
+
+      td {
+        border: 1px solid rgba(var(--va-c-primary-rgb), 0.3);
+      }
+
+      tr {
+        &:hover {
+          background-color: rgba(var(--va-c-primary-rgb), 0.05);
+        }
+      }
+    }
+  }
+}
