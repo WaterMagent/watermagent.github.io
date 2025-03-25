@@ -11,8 +11,8 @@ export default defineSiteConfig({
   description: 'Valaxy Theme Yun Preview.',
   social: [
     {
-      name: 'RSS',
-      link: '/atom.xml',
+      name: '洛谷',
+      link: 'https://www.luogu.com.cn/user/1429721',
       icon: 'i-ri-rss-line',
       color: 'orange',
     },
@@ -27,12 +27,6 @@ export default defineSiteConfig({
       link: 'https://github.com/WaterMagent',
       icon: 'i-ri-github-line',
       color: '#6e5494',
-    },
-    {
-      name: '洛谷',
-      link: 'https://www.luogu.com.cn/user/1429721',
-      icon: 'i-ri-weibo-line',
-      color: '#E6162D',
     },
     {
       name: '哔哩哔哩',
