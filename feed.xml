@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Valaxy Theme Yun</title>
+        <link>https://valaxy.site/</link>
+        <description>Valaxy Theme Yun Preview.</description>
+        <lastBuildDate>Tue, 25 Mar 2025 14:08:57 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Valaxy Theme Yun</title>
+            <url>https://cdn.luogu.com.cn/upload/image_hosting/nk6svehs.png</url>
+            <link>https://valaxy.site/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2025 © 水磁WaterMagent</copyright>
+        <atom:link href="https://valaxy.site/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Valaxy——新一代博客框架]]></title>
+            <link>https://valaxy.site/posts/valaxy</link>
+            <guid>https://valaxy.site/posts/valaxy</guid>
+            <pubDate>Sun, 23 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>江源速报:我把Hexo改为了Valaxy(因为实在太好用了啊啊啊啊啊啊啊啊啊啊)</p>
+</blockquote>
+<p>沸画不多说直接进入正题</p>
+<h1>安装必要功能</h1>
+<h2>安装git</h2>
+<p>windows用户可通过winget安装:</p>
+<pre><code class="language-p"></code></pre>
+<br/><p>访问 <a href="https://valaxy.site/posts/valaxy" target="_blank">https://valaxy.site/posts/valaxy</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (水磁WaterMagent)</author>
+        </item>
+        <item>
+            <title><![CDATA[Hello, Valaxy!]]></title>
+            <link>https://valaxy.site/posts/hello-valaxy</link>
+            <guid>https://valaxy.site/posts/hello-valaxy</guid>
+            <pubDate>Fri, 01 Apr 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Valaxy</h2>
+<p>Next Generation Static Blog Framework.</p>
+<p>Write your first post!</p>
+<h2>Usage</h2>
+<p>Modify `valaxy</p>
+<br/><p>访问 <a href="https://valaxy.site/posts/hello-valaxy" target="_blank">https://valaxy.site/posts/hello-valaxy</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (水磁WaterMagent)</author>
+        </item>
+    </channel>
+</rss>

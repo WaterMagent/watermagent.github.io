@@ -1,0 +1,38 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Valaxy Theme Yun",
+    "home_page_url": "https://valaxy.site/",
+    "feed_url": "https://valaxy.site/feed.json",
+    "description": "Valaxy Theme Yun Preview.",
+    "icon": "https://cdn.luogu.com.cn/upload/image_hosting/nk6svehs.png",
+    "author": {
+        "name": "水磁WaterMagent",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p>江源速报:我把Hexo改为了Valaxy(因为实在太好用了啊啊啊啊啊啊啊啊啊啊)</p>\n</blockquote>\n<p>沸画不多说直接进入正题</p>\n<h1>安装必要功能</h1>\n<h2>安装git</h2>\n<p>windows用户可通过winget安装:</p>\n<pre><code class=\"language-p\"></code></pre>\n<br/><p>访问 <a href=\"https://valaxy.site/posts/valaxy\" target=\"_blank\">https://valaxy.site/posts/valaxy</a> 阅读全文。</p>",
+            "url": "https://valaxy.site/posts/valaxy",
+            "title": "Valaxy——新一代博客框架",
+            "date_modified": "2025-03-23T00:00:00.000Z",
+            "date_published": "2025-03-23T00:00:00.000Z",
+            "author": {
+                "name": "水磁WaterMagent",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>Valaxy</h2>\n<p>Next Generation Static Blog Framework.</p>\n<p>Write your first post!</p>\n<h2>Usage</h2>\n<p>Modify `valaxy</p>\n<br/><p>访问 <a href=\"https://valaxy.site/posts/hello-valaxy\" target=\"_blank\">https://valaxy.site/posts/hello-valaxy</a> 阅读全文。</p>",
+            "url": "https://valaxy.site/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2022-04-01T00:00:00.000Z",
+            "date_published": "2022-04-01T00:00:00.000Z",
+            "author": {
+                "name": "水磁WaterMagent",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}

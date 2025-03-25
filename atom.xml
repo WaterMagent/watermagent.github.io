@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://valaxy.site/</id>
+    <title>Valaxy Theme Yun</title>
+    <updated>2025-03-25T14:08:57.732Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>水磁WaterMagent</name>
+        <email>i@valaxy.site</email>
+        <uri>https://valaxy.site</uri>
+    </author>
+    <link rel="alternate" href="https://valaxy.site/"/>
+    <link rel="self" href="https://valaxy.site/atom.xml"/>
+    <subtitle>Valaxy Theme Yun Preview.</subtitle>
+    <logo>https://cdn.luogu.com.cn/upload/image_hosting/nk6svehs.png</logo>
+    <icon>https://valaxy.site/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2025 © 水磁WaterMagent</rights>
+    <entry>
+        <title type="html"><![CDATA[Valaxy——新一代博客框架]]></title>
+        <id>https://valaxy.site/posts/valaxy</id>
+        <link href="https://valaxy.site/posts/valaxy"/>
+        <updated>2025-03-23T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>江源速报:我把Hexo改为了Valaxy(因为实在太好用了啊啊啊啊啊啊啊啊啊啊)</p>
+</blockquote>
+<p>沸画不多说直接进入正题</p>
+<h1>安装必要功能</h1>
+<h2>安装git</h2>
+<p>windows用户可通过winget安装:</p>
+<pre><code class="language-p"></code></pre>
+<br/><p>访问 <a href="https://valaxy.site/posts/valaxy" target="_blank">https://valaxy.site/posts/valaxy</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>水磁WaterMagent</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-03-23T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
+        <id>https://valaxy.site/posts/hello-valaxy</id>
+        <link href="https://valaxy.site/posts/hello-valaxy"/>
+        <updated>2022-04-01T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>Valaxy</h2>
+<p>Next Generation Static Blog Framework.</p>
+<p>Write your first post!</p>
+<h2>Usage</h2>
+<p>Modify `valaxy</p>
+<br/><p>访问 <a href="https://valaxy.site/posts/hello-valaxy" target="_blank">https://valaxy.site/posts/hello-valaxy</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>水磁WaterMagent</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-04-01T00:00:00.000Z</published>
+    </entry>
+</feed>
